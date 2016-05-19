@@ -53,7 +53,11 @@ if quitApp ~= 1
             end
 
             if choice
-                MotorSequenceApp(choiceList{choice},userNum,choiceList2{choice2});
+                if choice2 == 1
+                    MotorSequenceAppA(choiceList{choice},userNum,choiceList2{choice2});
+                else
+                    MotorSequenceAppB(choiceList{choice},userNum,choiceList2{choice2});
+                end
             end
         end
     end
